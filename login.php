@@ -1,11 +1,8 @@
 <html>
 <head>
-<title>Login</title>
+<title>Login Page</title>
 <link rel="stylesheet" href="login.css">
-
 </head>
-
-
 <body>
 
 <div id="container">
@@ -14,20 +11,16 @@
     <input type="text" placeholder="Username" name="username" required><br>
     <input type="password" placeholder="Password" name="password" required><br>
     <input type="Submit" name="submit" value="SIGN IN"><br>
-
   </form>
 </div>
 </body>
 
-
 </html>
-
-
 
 <?php
 
-$db_handle=mysqli_connect("localhost","root","") or die("<script type='text/javascript'>alert('Unable to connect to MySQL');</script>");
-$selected=mysqli_select_db($db_handle,'simplelogin') or die("<script type='text/javascript'>alert('Could not select examples');</script>"); 
+$db_handle=mysqli_connect("localhost","root","") or die("<script type='text/javascript'>alert('Unable to connect to MySQL, Verify XAMPP');</script>");
+$selected=mysqli_select_db($db_handle,'simplelogin') or die("<script type='text/javascript'>alert('Could not select examples, Verify Tables in myphpadmin');</script>"); 
 
 if(isset($_POST['submit'])){
     $un=$_POST['username'];
@@ -49,11 +42,11 @@ if(isset($_POST['submit'])){
 
     }
     else
-    echo "<script type='text/javascript'>alert('Invalid Password');</script>";
+    echo "<script type='text/javascript'>alert('Invalid Password, Try again');</script>";
 
 }
 else
-echo "<script type='text/javascript'>alert('Invalid Username');</script>";
+echo "<script type='text/javascript'>alert('Invalid Username, Try again');</script>";
 
 
 }
