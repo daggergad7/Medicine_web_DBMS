@@ -8,9 +8,9 @@
 - Database name: simplelogin
 - Collection name: user
 - Three fields : 
-- - username
-- - password
-- - type
-- - - admin
-- - - seller
-- - - user
+    - username
+    - password
+    - type:
+        - admin
+        - seller
+        - user
