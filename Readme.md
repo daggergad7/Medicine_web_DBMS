@@ -1,7 +1,7 @@
 # Medicine Inventory Management Website 
 
 ## Software used: 
-- mySql
+- mySQL
 - php 7
 
 ## Prerequisites
